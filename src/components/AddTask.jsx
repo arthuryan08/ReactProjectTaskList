@@ -2,21 +2,20 @@ import React, { useState } from "react";
 import "./AddTask.css";
 import Button from "./Button";
 
-const Addtask = ({ handleTaskAddition }) => {
-    const [inputData, setInputeData] = useState("");
-    const handleImputChange = (e) => {
-        console.log(e.target.value);
-        setInputeData(e.target.value);
+const AddTask = ({ handleTaskAddition }) => {
+    const [inputData, setInputData] = useState("");
+    const handleInputChange = (e) => {
+        setInputData(e.target.value);
     };
 
     const handleAddTaskClick = () => {
         handleTaskAddition(inputData);
-        setInputeData("");
+        setInputData("");
     };
     return (
         <div className="add-task-container">
             <input
-                onChange={handleImputChange}
+                onChange={handleInputChange}
                 value={inputData}
                 className="add-task-input"
                 type="text"
@@ -29,4 +28,4 @@ const Addtask = ({ handleTaskAddition }) => {
     );
 };
 
-export default Addtask;
+export default AddTask;
