@@ -8,7 +8,9 @@ const Task = ({ task, handleTaskClick }) => {
             style={task.completed ? { borderLeft: "6px solid chartreuse" } : {}}
             onClick={() => handleTaskClick(task.id)}
         >
-            <div className="task-title">{task.title}</div>
+            <div>
+				{task.title}
+			</div>
         </div>
     );
 };
