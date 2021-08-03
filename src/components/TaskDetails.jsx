@@ -3,6 +3,8 @@ import { useParams } from 'react-router-dom';
 
 import Button from './Button'
 
+import './TaskDetails.css';
+
 const TaskDetails = () => {
     const params = useParams()
     console.log(params);
@@ -12,7 +14,7 @@ const TaskDetails = () => {
             <Button>Voltar</Button>
             </div>
             <div className="task-details-container">
-                <p></p>
+                <h2>{params.taskTitle}</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem libero, sequi doloremque atque dolorem perspiciatis.</p>
             </div>
         </>

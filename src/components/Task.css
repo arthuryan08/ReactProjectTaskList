@@ -15,6 +15,7 @@
 
 .remove-task-button,.see-task-details-button{
     background-color: #444;
+    padding-left: 7px;
     border: none;
     font-size: 24px;
     color: chartreuse;
