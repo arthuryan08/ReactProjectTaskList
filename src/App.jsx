@@ -22,6 +22,11 @@ const App = () => {
             title: "Ler livros",
             completed: true,
         },
+        {
+            id: "3",
+            title: "Terminar projeto",
+            completed: true,
+        },
     ]);
 
     useEffect(() => {
